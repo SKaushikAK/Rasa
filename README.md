@@ -5,11 +5,8 @@ This repository contains a RASA-based chatbot developed for assisting new studen
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
-
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Training the Model](#training-the-model)
+- [Training and Running the Model](#training-and-running-the-model)
 - [Running the Chatbot](#running-the-chatbot)
 - [Contributing](#contributing)
 - [License](#license)
@@ -42,7 +39,26 @@ After installing Anaconda in your system, in Anaconda Prompt, do the following:
 
 To get started with the chatbot, clone this repository and install the necessary dependencies.
 
-```bash
-git clone https://github.com/SKaushikAK/Rasa.git
-cd Rasa
-pip install -r requirements.txt
+  ```
+    git clone https://github.com/SKaushikAK/Rasa.git
+    cd Rasa
+    pip install -r requirements.txt
+  ```
+## Training and Running the Model:
+
+For training the model:
+  ```
+  rasa train
+  ```
+
+For Running the Model:
+```
+rasa run
+```
+
+## Running the Chatbot:
+
+Now for running the chatbot, run the below command: 
+```
+python app.py
+```
