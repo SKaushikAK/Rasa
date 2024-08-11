@@ -1,0 +1,430 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi there!
+      - hello chatbot
+      - hey buddy
+      - good day
+      - hi, how are you?
+      - hey, what's up?
+      - hiya!
+      - greetings
+      - hello friend
+
+  - intent: goodbye
+    examples: |
+      - see ya!
+      - goodbye for now
+      - bye-bye
+      - take care
+      - catch you later
+      - farewell
+      - until next time
+      - see you soon
+
+  - intent: affirm
+    examples: |
+      - yes, that's correct
+      - yep!
+      - indeed it is
+      - absolutely
+      - that's right
+      - sure thing
+      - without a doubt
+
+  - intent: deny
+    examples: |
+      - nope, not at all
+      - nah, I disagree
+      - I don't think so
+      - definitely not
+      - no way, Jose
+      - not really, sorry
+
+  - intent: mood_great
+    examples: |
+      - I'm feeling fantastic
+      - I'm doing good
+      - amazing day today
+      - feeling awesome
+      - couldn't be better
+      - on top of the world
+      - pretty darn good
+      - having a great time
+      - feeling ecstatic
+      - nice
+      - good
+      - fine
+      - ok
+
+  - intent: mood_unhappy
+    examples: |
+      - feeling down
+      - not in a good mood
+      - pretty bummed out
+      - having a rough day
+      - feeling sad
+      - feeling blue
+      - not feeling too hot
+      - not my day
+
+  - intent: bot_challenge
+    examples: |
+      - are you a real person?
+      - are you a robot?
+      - am I talking to AI?
+      - are you human or machine?
+      - can you pass the Turing test?
+      - are you sentient?
+      - what is your name?
+      - what is ur name?
+      - your good name..
+
+  - intent: scholarship
+    examples: |
+      - Could you tell me about the scholarships available?
+      - What kind of scholarships does SSN offer?
+      - Do you have any information on scholarships?
+      - Can you provide details on scholarships?
+      - Are there any financial aid opportunities?
+      - How can I apply for a scholarship?
+
+  - intent: high_package
+    examples: |
+      - What's the highest salary and average salary/ package offered?
+      - Can you give me details on the highest package and average salary?
+      - What's the maximum salary and average salary offered to students?
+      - How much is the highest salary offered?
+
+  - intent: Placement
+    examples: |
+      - How are the job placements?
+      - Can you provide insights on campus placements?
+      - What's the placement scenario like?
+      - Are students getting good job offers?
+      - Tell me about the placement record.
+
+  - intent: College
+    examples: |
+      - Tell about your college?
+      - tell about ssn college?
+      - your college?
+      - college?
+      - ssn college?
+
+  - intent: Seats
+    examples: |
+      - How many seats are there in CSE department?
+      - Are there any vacant seats in ECE?
+      - Can you tell me about the available seats in IT?
+      - How many seats are allocated per department?
+      - What's the total number of seats in the college?
+
+  - intent: Faculty
+    examples: |
+      - Can you tell me about the faculty members?
+      - How experienced are the professors?
+      - Are the faculty members supportive?
+      - Can I get information about the qualifications of teachers?
+      - Do professors provide extra help outside class?
+
+  - intent: Syllabus
+    examples: |
+      - What's the syllabus for Computer Science?
+      - Can you provide the course curriculum?
+      - Is there any change in the syllabus this year?
+      - What textbooks are followed for the syllabus?
+      - How is the syllabus structured?
+
+  - intent: Clubs
+    examples: |
+      - Tell me about the clubs and societies.
+      - What extracurricular activities are available?
+      - Can I join any clubs in the college?
+      - Are there any student organizations?
+      - What kind of club activities can I participate in?
+
+  - intent: Day-scholar
+    examples: |
+      - What facilities are provided for day-scholars?
+      - Are there separate facilities for day-scholars?
+      - Can you tell me about the amenities for day-scholars?
+      - How are the day-scholar facilities?
+
+  - intent: Hosteller
+    examples: |
+      - What are the amenities provided for hostellers?
+      - Can you tell me about the facilities for hostel residents?
+      - Are there any perks for staying in the hostel?
+      - How's the accommodation for hostellers?
+
+  - intent: Higher studies training
+    examples: |
+      - Does the college offer coaching for higher studies?
+      - Are there any programs for postgraduate studies?
+      - Can I get guidance for pursuing higher education?
+      - Is there assistance available for GRE/GATE preparation?
+
+  - intent: Achievements
+    examples: |
+      - What are the notable achievements of the college?
+      - Can you list some achievements of SSN?
+      - Are there any awards or recognitions received?
+      - How has the college excelled in the past?
+
+  - intent: Location
+    examples: |
+      - Where is SSN college located?
+      - Where is college located?
+      - location?
+      - College location?
+
+  - intent: College statistics
+    examples: |
+      - Can I get statistics on student admissions?
+      - What's the historical data on seat allocation?
+      - Are there any trends in past admission numbers?
+      - How has the student population changed over the years?
+
+  - intent: Transportation
+    examples: |
+      - Is there transportation available for students?
+      - How do students commute to the college?
+      - Can you provide details on bus facilities?
+      - What's the transportation system like?
+
+  - intent: ranking
+    examples: |
+      - How does the college rank nationally?
+      - Can you tell me about the college's ranking in India?
+      - What's the current ranking of SSN College of Engineering?
+      - How prestigious is the college's ranking?
+      -
+
+  - intent: ranking_tn
+    examples: |
+      - What's the college's ranking in Tamil Nadu?
+      - Can you provide information on the state ranking?
+      - How does SSN fare among other colleges in Tamil Nadu?
+
+  - intent: phd_staff
+    examples: |
+      - What is the highest qualification of the faculties in ssn college?
+      - How many professors have a Ph.D. degree?
+      - What's the ratio of Ph.D. staff to non-Ph.D. staff?
+      - Are there many Ph.D. scholars teaching at the college?
+
+  - intent: facilities_differ
+    examples: |
+      - What makes SSN stand out from other colleges?
+      - How are the facilities at SSN different from elsewhere?
+      - Can you highlight some unique features of SSN?
+
+  - intent: infrastructure
+    examples: |
+      - How extensive is the college's infrastructure?
+      - Can you describe the campus facilities?
+      - What's the total area of the college premises?
+      - Are there any notable landmarks on campus?
+
+  - intent: Sports_Quota
+    examples: |
+      - Are admissions available through sports quota?
+      - How many seats are allotted via sports quota?
+      - Can I apply for admission based on sports achievements?
+      - what is the fee structure for sports quota?
+      - what is the fee structure for sports structure?
+  #       - sports quota fee structure?
+  - intent: Admission
+    examples: |
+      - What's the admission process like?
+      - Can you guide me through the admission procedure?
+      - How do I apply for admission to SSN College of Engineering?
+      - admission in ssn college?
+      - available admission processes in SSN college?
+
+  - intent: Admission Documents
+    examples: |
+      - What documents do I need for admission?
+      - Can you provide a list of required admission documents?
+      - Are there any specific papers needed for admission?
+
+  - intent: Lateral Entry
+    examples: |
+      - Is there a lateral entry option available?
+      - Can I join the college through lateral entry?
+      - How many seats are allocated for lateral entry?
+      - What are the eligibility criteria for lateral entry?
+
+  - intent: cutoff
+    examples: |
+      - What's the cutoff for admissions?
+      - Can you tell me about the admission cutoff?
+      - How high is the admission cutoff usually?
+
+  - intent: management_quota
+    examples: |
+      - What's the process for management quota admissions?
+      - How do I get admitted through management quota?
+
+  - intent: councelling_quota
+    examples: |
+      - What is the procedure for councelling quota admission?
+      - councelling quota admission?
+      - Tell me about councelling quota
+      - How does the counselling process work for SSN?
+      - Can I apply through Anna University counseling?
+
+  - intent: course_fee
+    examples: |
+      - What's the fee structure for each course?
+      - Can you provide information on course fees?
+      - fee structure?
+
+  - intent: faculties_list
+    examples: |
+      - Can you list all the faculty members?
+      - Who are the professors teaching at SSN?
+      - faculties list?
+      - department faculties list
+
+  - intent: hostel_enroll
+    examples: |
+      - How can I enroll in the hostel?
+      - Where do I go to register for hostel accommodation?
+
+  - intent: enrollment_strength
+    examples: |
+      - How many students are enrolled in each department?
+      - Can I get data on student enrollment per year?
+
+  - intent: sports_facilities
+    examples: |
+      - What sports facilities are available on campus?
+      - Can you describe the sports amenities at SSN?
+
+  - intent: marking_system
+    examples: |
+      - How is the grading system structured?
+      - What kind of marking system does SSN use?
+
+  - intent: library
+    examples: |
+      - Is there a library facility at SSN?
+      - What resources are available in the college library?
+
+  - intent: ug_courses_available
+    examples: |
+      - Can you provide a list of ug courses offered?
+      - What are the available ug  programs at SSNCE?
+      - How many ug departments are there in ssn college?
+      - total ug departments in college?
+
+  - intent: pg_courses
+    examples: |
+      - What are all the pg courses available in ssn college?
+      - What are all the post graduate courses available in ssn college?
+      - pg courses available in SSN college?
+      - post graduate courses available in SSN college?
+      - pg courses ?
+      - post graduate courses ?
+
+  - intent: lateral_eligible
+    examples: |
+      - What is the eligibility criteria for lateral entry?
+      - eligibility for lateral entry?
+      - lateral entry?
+
+  - intent: eee_course
+    examples: |
+      - What are the core subjects in eee department?
+      - eee course
+      - eee syllabus
+      - eee course syllabus?
+      - academic details about eee course?
+
+  - intent: ece_course
+    examples: |
+      - What are the core subjects in ece department?
+      - ece course
+      - ece syllabus
+      - ece course syllabus?
+      - academic details about ece course?
+
+  - intent: it_course
+    examples: |
+      - What are the core subjects in it department?
+      - it course
+      - it course syllabus?
+      - it syllabus
+      - academic details about IT course?
+
+  - intent: cse_course
+    examples: |
+      - What are the core subjects in cse department?
+      - cse course
+      - cse course syllabus?
+      - cse syllabus?
+      - academic details about cse course?
+
+  - intent: bme_course
+    examples: |
+      - What are the core subjects in bme or bio medical department?
+      - bme course
+      - biomedical course or department?
+      - bme course syllabus?
+      - bme syllabus?
+      - academic details about bme or biomedical course?
+
+  - intent: civil_course
+    examples: |
+      - What are the core subjects in civil department?
+      - civil course
+      - civil course syllabus?
+      - civil syllabus?
+      - academic details about civil course?
+
+  - intent: mech_course
+    examples: |
+      - What are the core subjects in mech department?
+      - mech course
+      - mech course syllabus?
+      - mech syllabus?
+      - academic details about mech course?
+
+  - intent: founder_date
+    examples: |
+      - Who is the founder of SSN college of engineering?
+      - who is the founder?
+      - founder?
+      - founder of ssn?
+      - when did the college start?
+      - who is the founder and when did the college start?
+      - when did it start?
+
+  - intent: contact
+    examples: |
+      - Whom to contact to get more details on admission process?
+      - Who should i contact for more details regarding admission?
+      - contact details to get more information
+      - what is the contact details?
+      - contact details ?
+
+  - intent: code_of_conduct
+    examples: |
+      - what is the code of conduct in college?
+      - code of conduct?
+      - what is the code of conduct?
+
+  - intent: vision
+    examples: |
+      - what is the vision and mission?
+      - vision and mission?
+
+  - intent: tnea_code
+    examples: |
+      - what is the tnea councelling code of ssn college?
+      - councelling code of college?
+      - tnea counselling code of ssn

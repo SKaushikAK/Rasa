@@ -1,0 +1,281 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Inquire about scholarships
+    steps:
+      - intent: scholarship
+      - action: utter_provide_scholarship_info
+
+  - story: Inquire about the highest package
+    steps:
+      - intent: high_package
+      - action: utter_provide_highest_package_info
+
+  - story: Inquire about placements
+    steps:
+      - intent: Placement
+      - action: utter_provide_placement_info
+
+  - story: Inquire about available seats
+    steps:
+      - intent: Seats
+      - action: utter_provide_seat_info
+
+  - story: Inquire about faculty
+    steps:
+      - intent: Faculty
+      - action: utter_provide_faculty_info
+
+  - story: Inquire about syllabus
+    steps:
+      - intent: Syllabus
+      - action: utter_provide_syllabus_info
+
+  - story: Inquire about clubs
+    steps:
+      - intent: Clubs
+      - action: utter_provide_club_info
+
+  - story: Inquire about facilities for day scholars
+    steps:
+      - intent: Day-scholar
+      - action: utter_provide_day_scholar_facilities
+
+  - story: Inquire about facilities for hostellers
+    steps:
+      - intent: Hosteller
+      - action: utter_provide_hosteller_facilities
+
+  - story: Inquire about higher studies training
+    steps:
+      - intent: Higher studies training
+      - action: utter_provide_higher_studies_training_info
+
+  - story: Inquire about achievements
+    steps:
+      - intent: Achievements
+      - action: utter_provide_achievements_info
+
+  - story: Inquire about college statistics
+    steps:
+      - intent: College statistics
+      - action: utter_provide_college_statistics_info
+
+  - story: Inquire about transportation facilities
+    steps:
+      - intent: Transportation
+      - action: utter_provide_transportation_info
+
+  - story: Inquire about college ranking
+    steps:
+      - intent: ranking
+      - action: utter_provide_college_ranking_info
+
+  - story: Inquire about sports quota
+    steps:
+      - intent: Sports_Quota
+      - action: utter_provide_sports_quota
+
+  - story: Inquire about Admission
+    steps:
+      - intent: Admission
+      - action: utter_provide_Admission
+
+  - story: Inquire about infrastructure
+    steps:
+      - intent: infrastructure
+      - action: utter_provide_infrastructure
+
+  - story: Inquire about Admission Documents
+    steps:
+      - intent: Admission Documents
+      - action: utter_provide_admission_doocuments
+
+  - story: Inquire about lateral entry
+    steps:
+      - intent: Lateral Entry
+      - action: utter_provide_lateral_entry
+
+  - story: Inquire about ranking_tn
+    steps:
+      - intent: ranking_tn
+      - action: utter_provide_ranking_tn
+
+  - story: Inquire about phd_staff
+    steps:
+      - intent: phd_staff
+      - action: utter_provide_phd_staff
+
+  - story: Inquire about facilities_differ
+    steps:
+      - intent: facilities_differ
+      - action: utter_provide_facilities_differ
+
+  - story: Inquire about management_quota
+    steps:
+      - intent: management_quota
+      - action: utter_provide_management_quota_process
+
+  - story: Inquire about councelling_quota
+    steps:
+      - intent: councelling_quota
+      - action: utter_provide_councelling_quota
+
+  - story: cutoff
+    steps:
+      - intent: cutoff
+      - action: utter_provide_cutoff
+
+  - story: course_fee
+    steps:
+      - intent: course_fee
+      - action: utter_provide_course_fee
+
+  - story: faculties_list
+    steps:
+      - intent: faculties_list
+      - action: utter_provide_faculties_list
+
+  - story: hostel_enroll
+    steps:
+      - intent: hostel_enroll
+      - action: utter_provide_hostel_enroll
+
+  - story: enrollment-strength
+    steps:
+      - intent: enrollment_strength
+      - action: utter_provide_enrollment_Strength
+
+  - story: sports_facilities
+    steps:
+      - intent: sports_facilities
+      - action: utter_provide_sports_facilties
+
+  - story: marking_system
+    steps:
+      - intent: marking_system
+      - action: utter_provide_marking_system
+
+  - story: library
+    steps:
+      - intent: library
+      - action: utter_provide_library
+
+  - story: courses-available
+    steps:
+      - intent: ug_courses_available
+      - action: utter_provide_ug_courses_available
+
+  - story: elgibility_lateral
+    steps:
+      - intent: lateral_eligible
+      - action: utter_provide_lateral_eligible
+
+  - story: pg courses
+    steps:
+      - intent: pg_courses
+      - action: utter_provide_pg_course
+
+  - story: EEE course
+    steps:
+      - intent: eee_course
+      - action: utter_provide_eee
+
+  - story: ECE course
+    steps:
+      - intent: ece_course
+      - action: utter_provide_ece
+
+  - story: IT course
+    steps:
+      - intent: it_course
+      - action: utter_provide_it
+
+  - story: CSE course
+    steps:
+      - intent: cse_course
+      - action: utter_provide_cse
+
+  - story: founder
+    steps:
+      - intent: founder_date
+      - action: utter_provide_founder
+
+  - story: contact details
+    steps:
+      - intent: contact
+      - action: utter_provide_contact
+
+  - story: vision and mission
+    steps:
+      - intent: vision
+      - action: utter_provide_vision
+
+  - story: bme course
+    steps:
+      - intent: bme_course
+      - action: utter_provide_bme
+
+  - story: fee-sports
+    steps:
+      - intent: Sports_Quota
+      - action: utter_provide_sports_quota
+
+  - story: code conduct
+    steps:
+      - intent: code_of_conduct
+      - action: utter_provide_code_of_conduct
+
+  - story: civil course
+    steps:
+      - intent: civil_course
+      - action: utter_provide_civil
+
+  - story: mech course
+    steps:
+      - intent: mech_course
+      - action: utter_provide_mech
+
+  - story: tnea
+    steps:
+      - intent: tnea_code
+      - action: utter_provide_tnea_code
+
+  - story: location
+    steps:
+      - intent: Location
+      - action: utter_provide_location
+
+  - story: college
+    steps:
+      - intent: College
+      - action: utter_provide_college
+      
+

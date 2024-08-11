@@ -1,0 +1,328 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - scholarship
+  - high_package
+  - tnea_code
+  - Placement
+  - Seats
+  - Faculty
+  - Syllabus
+  - Clubs
+  - Day-scholar
+  - Hosteller
+  - Higher studies training
+  - Achievements
+  - College statistics
+  - Transportation
+  - ranking
+  - facilities_differ
+  - infrastructure
+  - Sports_Quota
+  - Admission
+  - Admission Documents
+  - Lateral Entry
+  - ranking_tn
+  - phd_staff
+  - cutoff
+  - management_quota
+  - councelling_quota
+  - course_fee
+  - faculties_list
+  - hostel_enroll
+  - enrollment_strength
+  - sports_facilities
+  - marking_system
+  - library
+  - ug_courses_available
+  - lateral_eligible
+  - pg_courses
+  - eee_course
+  - ece_course
+  - it_course
+  - cse_course
+  - bme_course
+  - civil_course
+  - mech_course
+  - founder_date
+  - contact
+  - code_of_conduct
+  - vision
+  - Location
+  - College
+  
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up: https://i.imgur.com/nGF1K8f.jpg"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_provide_location:
+    - text: "Our SSN college is located in 
+Sri Sivasubramaniya Nadar (SSN) College of Engineering – campus
+Rajiv Gandhi Salai (OMR)
+Kalavakkam – 603 110
+Tamil Nadu, India
+
+To Contact us:
+Phone: +91 44 2746 9700
+"
+  
+  
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_provide_bme:
+    - text: "To know about the bio medical department refer the link below
+      https://www.ssn.edu.in/college-of-engineering/bio-medical-engineering-department-ssn-institutions/"
+    
+  utter_provide_civil:
+    - text: "To know about the civil department refer the link below
+    https://www.ssn.edu.in/college-of-engineering/civil-engineering-department-ssn-institutions/"
+
+  utter_provide_mech:
+    - text: "To know about the mech department refer the link below
+    https://www.ssn.edu.in/college-of-engineering/b-e-mechanical-engineering/
+    "
+
+  utter_provide_vision:
+    - text: "VISION
+To be an institution of choice among aspiring managers to launch successful careers and engage in research as a means of keeping abreast of latest developments and generate new knowledge in management.
+
+MISSION
+Develop industry ready and effective managers by imparting insightful knowledge and necessary skills.
+Provide an environment to aid continuous learning among students.
+Collaborate with industry for creating meaningful opportunities for students.
+Continuously strive to increase and improve research activities.
+Create and leverage opportunities in training and consultancy to foster linkages with industry."
+
+  utter_provide_scholarship_info:
+    - text: "SSN College of Engineering offers various scholarships for eligible students. To know more about scholarships, please visit the college website or contact the admission office."
+
+  utter_provide_highest_package_info:
+    - text: "The highest package offered at SSN College of Engineering varies each year. For the latest information on the highest package, 1.17 crore
+        Average Salary is 10.8LPA
+"
+  
+  utter_provide_college:
+    - text: "SSN College of Engineering (SSNCE) is a premier engineering institution located in Chennai, Tamil Nadu, India. Here’s a brief overview:
+
+Founding and Background
+Established: 1996
+Founder: Dr. Shiv Nadar, Founder of HCL Technologies.
+Affiliation: SSNCE is affiliated with Anna University, a leading technical university in Tamil Nadu."
+
+  utter_provide_code_of_conduct:
+    - text: " To know about code of conduct, please refer the following link: 
+    https://www.ssn.edu.in/wp-content/uploads/2023/06/Code-of-Conduct_SSNCE_Nov2022-1.pdf
+    "
+
+  utter_provide_placement_info:
+    - text: "SSN College of Engineering has a strong placement record. Companies from various sectors visit the campus for recruitment. To know more about placements, please visit the college placement cell or refer to the official website.
+    https://www.ssn.edu.in/wp-content/uploads/2023/10/SSN-Overview-Presentation-Copy-2.jpg
+    https://www.ssn.edu.in/wp-content/uploads/2023/06/Placement-Report_NBA.pdf"
+
+
+  utter_provide_seat_info:
+    - text: "The number of seats available in each department varies. For detailed information on seat allocation, please refer to the college admission brochure or contact the admission office."
+
+  utter_provide_faculty_info:
+    - text: "Faculty members at SSN College of Engineering are highly qualified and experienced in their respective fields. To know more about individual faculty members, you can visit the college website or contact the concerned department."
+
+  utter_provide_syllabus_info:
+    - text: "SSN College of Engineering follows a comprehensive syllabus prescribed by the Anna University. To know more about the syllabus followed for each course, you can visit the college website or contact the academic department."
+
+  utter_provide_club_info:
+    - text: "SSN College of Engineering offers a wide range of club activities, catering to various interests of students. To know more about the clubs and their activities, you can visit the college website or contact the student affairs office."
+
+  utter_provide_day_scholar_facilities:
+    - text: "SSN College of Engineering provides various facilities for day scholars, including transportation, library access, and cafeteria services. To know more about the facilities available for day scholars, you can visit the college website or contact the student affairs office."
+
+  utter_provide_hosteller_facilities:
+    - text: "Hostel facilities at SSN College of Engineering include accommodation, dining, recreational amenities, and security measures. To know more about the facilities available for hostellers, you can visit the college website or contact the hostel administration."
+
+  utter_provide_higher_studies_training_info:
+    - text: "SSN College of Engineering offers specialized training programs to prepare students for higher studies. To know more about the higher studies training initiatives, you can visit the college website or contact the career guidance cell."
+
+  utter_provide_achievements_info:
+    - text: "SSN College of Engineering has achieved significant milestones in academics, research, and extracurricular activities. To know more about the achievements, you can visit the college website or refer to the annual reports."
+
+  utter_provide_college_statistics_info:
+    - text: "SSN College of Engineering maintains comprehensive statistics on various aspects, including admission trends, academic performance, and placement statistics. To know more about the college statistics, you can visit the college website or contact the administration."
+
+  utter_provide_transportation_info:
+    - text: "SSN College of Engineering provides transportation facilities for students and staff residing in different parts of the city. To know more about the transportation services, you can visit the college website or contact the transport department."
+
+  utter_provide_college_ranking_info:
+    - text: "SSN College of Engineering has consistently secured top rankings in national and international assessments. To know more about the college rankings, you can visit the college website or refer to the ranking publications.
+     NAAC graded this college with the 'A+' grade and is also recognised by the UGC. SSN College of Engineering is ranked at 45th position in Engineering category and 80th in Overall category as per NIRF rankings 2023."
+
+  utter_provide_sports_quota:
+    - text: "SSN College of Engineering has available seats under sports quota of 10%. And that happens under management quota. First management happens as usual, and after that you will be asked to submit your sports related certificates. Then you will totally be considered as a sports quota and will be allocated seat according to your aptitude, interview and cut-off marks secured."
+
+
+  utter_provide_Admission:
+    - text: "SSN College of Engineering provides two types of admission. One is councelling and management quota. Sports Quota comes under management quota. In case of councelling, it followas TNEA procedure. In case of management, we looke for the cutoff. After that you will receive a orientation letter, where the details about the entrance exams will be given, which comprises of aptitude and interview. Based on all the marks, including your cutoff, 
+    will be use to allocate you the seat of respective department. Admission for 65% of the seats at SSN is done through the single window counselling as per Anna University norms. These seats at SSN are filled up within the first few days of counselling with significantly high cut-off marks. The remaining 35% of the seats of the management quota are also filled on merit. 25 seats are earmarked for students who excel in both their academics and sports 
+    (by way of encouraging sports) and another 25 seats are offered free for the toppers of Government rural schools of Tamil Nadu on a ‘scholarship for meritorious students from rural areas’. In addition, 15 toppers from State Board Schools are offered free education at SSN under the‘ walk-in-walk-out’ scholarship.Selection of candidates will be based on the Qualifying marks (Q) obtained in Mathematics, Physics and Chemistry in Plus Two or equivalent.
+    Q = M + ((P+C) / 2), where M, P and C are percentage marks in Mathematics, Physics and Chemistry respectively.
+    Selection is based solely on Merit.
+    Mere submission of data-sheet is not a guarantee for selection.
+"
+
+  utter_provide_infrastructure:
+    - text: "SSN College of Engineering has a total area of 230  acres, comprising of 8 departments. "
+
+  utter_provide_admission_doocuments:
+    - text: "In case of admission, the main things required original 10th and 12th marksheet, in case no, attested copies of marksheets, passport size photos (2 minimum), any personal Id (Aadhar card, Driving License, PAN card). 2 copies are required from each documents. "
+
+  utter_provide_lateral_entry:
+    - text: "we have a little percentage of lateral entry seats."
+
+  utter_provide_ranking_tn:
+    - text: "SSN College of Engineering stands in first place. And our college is the first college to stand top 50 NIRF ranking even under Anna University affilated."
+
+  utter_provide_phd_staff:
+    - text: "SSN College of Engineering has 90 to 95% of phd. staffs."
+
+  utter_provide_facilities_differ:
+    - text: "SSN College of Engineering has great academic and co-curricular facilities compared to other colleges in India"
+
+  utter_provide_cutoff:
+    - text: "SSN College of Engineering is a reputed  college which implies that the cut-off required is https://www.ssn.edu.in/wp-content/uploads/2020/06/Cut-Off_CAY.pdf "
+
+  utter_provide_management_quota_process:
+    - text: "IN SSN colllege of Engineering, management quota comprises of entrance exams which has aptitude test and interview"
+
+  utter_provide_councelling_quota:
+    - text: "IN SSN colllege of Engineering, councelling quota seats are filled via Anna University"
+
+  utter_provide_course_fee:
+    - text: "In SSN College of Engineering, the course fee varies by type of admission.
+    For management in case of hosteller, For more queries,contact Dr.I.Joe Louis Paul(IT Dept)"
+
+  utter_provide_faculties_list:
+    - text: "Check out the link: https://www.ssn.edu.in/staff/"
+
+  utter_provide_hostel_enroll:
+    - text: "You can contact the admin office for hostel enrollment"
+
+  utter_provide_enrollment_Strength:
+    - text: "The total students enerolled for every year in each department varies.Current the student strength of CSE & IT is 180 and ECE,EEE &MECH  are 120 and BME,CHEMICAL &CIVIL are 60"
+
+  utter_provide_sports_facilties:
+    - text: "There is cricket ground and basket ball court and there is also a separate building for indoor activities"
+
+  utter_provide_marking_system:
+    - text: "In SSN College of Engineering, we follow relative grading(Dept wise)"
+
+  utter_provide_library:
+    - text: "We have a common library for students in SSNCE."
+
+  # utter_provide_sports_fee:
+  #   - text: "For knowing about the fee please contact the college admistration."
+
+  utter_provide_ug_courses_available:
+    - text: "The available coursses are as follows: 
+B.E. Biomedical Engineering
+B.E Electronics and Communication
+B.E. Chemical Engineering
+B.E. Electrical & Electronics Engineering
+B.E. Civil Engineering
+M.Tech Integrated CSE
+B.Tech Information Technology
+B.E. Computer Science and Engineering
+B.E. Mechanical Engineering"
+
+  utter_provide_lateral_eligible:
+    - text: "Candidates with a minimum of 55% marks in the Diploma in Engineering / Technology awarded by the State Board of Technical Education, Tamilnadu or its equivalent are eligible 
+for Lateral entry admission to the third semester of B.E. / B.Tech. in the branch corresponding to the area their of study at the diploma." 
+
+  utter_provide_pg_course:
+    - text: "The M.E/M.Tech programs are 4 semesters (2 years) long.  All the PG programs are residential. Evaluations, both internal and external, are carried out according to the norms of Anna University.
+M.E. / M.Tech Programs of SSN are industry relevant. Admission to these courses is strictly by merit. There are currently nine  M.E./M.Tech. programs offered at SSN.
+Admission for 50% of the seats at SSN is done through the Single Window Counselling as per Anna University norms. The remaining 50% of the seats of the management quota are also filled based on merit.
+M.Tech Information Technology
+
+M.E. Communication System
+
+M.E. Manufacturing Engineering
+
+M.E. Computer science and Engineering
+
+M.E. Medical Electronics
+
+M.E. Energy Engineering
+
+M.E. Power Electronics and Drives
+
+M. Tech Environmental Science and Technology
+
+M.E. VLSI Design"
+
+  utter_provide_tnea_code:
+    - text: "TNEA councelling of SSN college of Engineering is 1315"
+
+  utter_provide_eee:
+    - text: "The department of EEE offers 30 professional core subjects, 30 professional elective subjects, 8 open elective subjects, 2 employability enhancement course, and 4 engineering sciences subjects. The complete list of subjects and the syllabus is enclosed in the link below.
+    BE - EEE Curriculum 2018 : https://www.ssn.edu.in/wp-content/uploads/2023/05/BE_EEE_Curriculum2021-1.pdf
+    BE - EEE Curriculum 2021 : https://www.ssn.edu.in/wp-content/uploads/2023/05/BE_EEE_Curriculum2018-2.pdf 
+    "
+  utter_provide_ece:
+    - text: "The department of ECE offers 30 professional core subjects, 30 professional elective subjects, 8 open elective subjects, 2 employability enhancement course, and 4 engineering sciences subjects. The complete list of subjects and the syllabus is enclosed in the link below.
+              BE - ECE Curriculum: https://www.ssn.edu.in/wp-content/uploads/2020/06/BE_ECE_CurriculumSyllabi.pdf"
+  
+  utter_provide_it:
+    - text: "The belowlink can help you with the curriculam and syllabus
+    https://www.ssn.edu.in/wp-content/uploads/2023/04/B.Tech-IT-R2021-Curriculum-Syllabi.pdf
+    "
+  utter_provide_cse:
+    - text: "The department of CSE offers 25 professional core subjects, 39 professional elective subjects, 8 open elective subjects oriented towards three specialization areas of Artificial Intelligence and Machine Learning, Software Engineering & Systems and Security, 4 employability enhancement course, 2 mandatory courses and 9 engineering sciences subjects. The complete list of subjects and the syllabus is enclosed in the link below.
+    B.E CSE Curriculum 2021: https://www.ssn.edu.in/wp-content/uploads/2023/06/5001_CSE_R2021.pdf"
+  
+  utter_provide_founder:
+    - text: "
+    Sri Sivasubramaniya Nadar College of Engineering(SSN) was started in 1996 by Padma Bhushan Dr Shiv Nadar. The college was opened in 1996 at a temporary location in Thoraipakkam in the suburbs of Chennai, Tamil Nadu as an affiliate of Anna University.
+    "
+  
+  utter_provide_contact:
+    - text: "Sri Sivasubramaniya Nadar (SSN) College of Engineering – campus
+Rajiv Gandhi Salai (OMR)
+Kalavakkam - 603 110
+Tamil Nadu, India
+Phone: +91 44 2746 9700
+Working hours 8am to 3:30pm
+
+Trust office
+New No. 19, Old No. 8,
+3rd Main Rd,
+Kasthuribai Nagar,
+Adyar, Chennai,
+Tamil Nadu 600020
+Phone : 044 - 2441 1656 / 2441 6474
+Working hours 9:30am - 6pm
+    "
+
+session_config:
+  session_expiration_time: 120
+  carry_over_slots_to_new_session: true

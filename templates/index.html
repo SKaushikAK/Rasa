@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSN Chatbot</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-image: url("static/background.jpg");
+        background-size: cover;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        width: 100%;
+      }
+      .container {
+        position: inorder;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        padding: 0; /* Adjusted padding */
+      }
+
+      .chat-icon-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px; /* Adjusted position */
+        display: flex;
+        align-items: center;
+      }
+
+      .chat-icon {
+        background-color: #007bff; /* Primary blue */
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .chat-icon-text {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #fff; /* Primary blue */
+        margin-right: 10px;
+        animation: blink-animation 1s infinite alternate;
+      }
+
+      @keyframes blink-animation {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.5;
+        }
+      }
+
+      .chat-widget {
+        position: fixed;
+        bottom: 90px;
+        right: 30px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        max-width: 90%; /* Limit maximum width */
+        overflow: hidden; /* Hide overflowing content */
+        display: none;
+      }
+
+      .chat-header {
+        background-color: #007bff; /* Primary blue */
+        color: #fff;
+        padding: 14px;
+        text-align: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .chat-body {
+        height: 350px; /* Adjust height as needed */
+        overflow-y: auto;
+        padding: 15px;
+      }
+
+      .message {
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+
+      .user-message {
+        background-color: #dc3545; /* Danger red */
+        color: #fff;
+        text-align: right;
+      }
+
+      .bot-message {
+        background-color: #28a745; /* Success green */
+        color: #fff;
+      }
+
+      .chat-footer {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #007bff; /* Primary blue */
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      .chat-input {
+        flex: 1;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin-right: 10px;
+      }
+
+      .send-btn {
+        background-color: #6abf69;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .send-btn:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://www.ssn.edu.in/wp-content/uploads/2019/12/ssn-logo-687F0FB88D-seeklogo.png"
+          width="50"
+          height="35"
+          class="d-inline-block align-top"
+          alt="ssn_logo"
+        />
+      </a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="mx-auto">
+          <!-- Added this div -->
+          <span class="text-center">SSN College of Engineering</span>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="chat-icon-container">
+        <div class="chat-icon-text">Ask us anything</div>
+        <div class="chat-icon" id="chat-icon">&#128172;</div>
+      </div>
+
+      <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+          <h3 style="font-family: 'Pacifico', cursive">Chatbot</h3>
+        </div>
+        <div class="chat-body" id="chat-widget-messages">
+          <!-- Messages will appear here -->
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            class="chat-input"
+            id="chat-widget-input"
+            placeholder="Type your message..."
+          />
+          <button class="send-btn" id="send-btn">&#10148;</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#chat-icon").click(function () {
+          $("#chat-widget").toggle();
+        });
+
+        // Function to append user message
+        function appendUserMessage(message) {
+          $("#chat-widget-messages").append(
+            '<div class="message user-message">' + message + "</div>"
+          );
+        }
+
+        // Function to append bot message
+        function appendBotMessage(message) {
+          $("#chat-widget-messages").append(
+            '<div class="message bot-message">' + message + "</div>"
+          );
+        }
+
+        // Send message on button click
+        $("#send-btn").click(function () {
+          var userMessage = $("#chat-widget-input").val();
+          if (userMessage.trim() !== "") {
+            appendUserMessage(userMessage);
+            $("#chat-widget-input").val("");
+
+            // Replace with your actual webhook endpoint
+            $.ajax({
+              type: "POST",
+              url: "/webhook",
+              contentType: "application/json",
+              data: JSON.stringify({ message: userMessage }),
+              success: function (data) {
+                appendBotMessage(data.response); // Assuming the server sends back the response in JSON format
+              },
+              error: function () {
+                appendBotMessage(
+                  "Oops! Something went wrong. Please try again."
+                );
+              },
+            });
+          }
+        });
+
+        // Send message on Enter key press
+        $("#chat-widget-input").keypress(function (e) {
+          if (e.which === 13) {
+            $("#send-btn").click();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
